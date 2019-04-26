@@ -80,7 +80,7 @@ class Point extends OGCObject
 
     public function __toString()
     {
-        return "$this->lat $this->lon";
+        return "$this->lon $this->lat";
     }
 
     /*
