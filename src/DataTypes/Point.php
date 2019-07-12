@@ -45,7 +45,7 @@ class Point extends OGCObject
         if(count($points) != 2)
             throw new GeoSpatialException('Error: wrong number of array elements, two needed');
 
-        return new Point($points[0], $points[1]);
+        return new Point($points[1], $points[0]);
     }
 
     /**
@@ -75,7 +75,7 @@ class Point extends OGCObject
     */
     protected function toValueArray()
     {
-        return [$this->lat, $this->lon];
+        return [$this->lon, $this->lat];
     }
 
     public function __toString()

@@ -51,7 +51,7 @@ class LineString extends OGCObject implements \Countable
         $parsed_points = array_map(function($p){
             if( !is_array($p) or sizeof($p) != 2)
                 throw new GeoSpatialException('Error: array of array containing lat, lon expected.');
-            return new Point($p[0], $p[1]);
+            return new Point($p[1], $p[0]);
         }, $points);
         return new static($parsed_points);
     }
