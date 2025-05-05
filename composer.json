@@ -13,7 +13,7 @@
   "require": {
     "php": ">=5.4.0",
     "creof/wkb-parser": "^2.3",
-    "creof/wkt-parser": "^2.2"
+    "creof/wkt-parser": "dev-master"
   },
   "require-dev": {
     "phpunit/phpunit": "4.0.*"
@@ -22,5 +22,10 @@
     "psr-4": {
       "ElevenLab\\PHPOGC\\": "src/"
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/inonbaguio/wkt-parser"
+    },
 }
